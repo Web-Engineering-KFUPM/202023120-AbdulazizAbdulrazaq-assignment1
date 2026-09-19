@@ -31,8 +31,8 @@ How I used them, step by step:
 
 **What was difficult**
 
-- The AI does not know me. The About text and the projects had to come from my real courses and my
-  senior project; I had to give it that information myself.
+- The AI does not know me. The About text and the projects had to come from my real work (my senior
+  project and my company's product); I had to give it that information myself.
 - One screenshot showed the dark theme as grey. It turned out it was taken halfway through the colour
   transition, not a real bug. I learned not to trust a test result without understanding it.
 - Code from AI can look finished and still have small problems, so I had to test every feature.
@@ -60,15 +60,15 @@ for transparency, so I document exactly how I used it.
   - In dark mode the main button had white text on a light green background, which was hard to read.
     An `--on-accent` colour was added so the button text becomes dark in dark mode.
   - `localStorage` is wrapped in `try / catch` so the page still works in private browsing.
-- **Real content only.** The three projects are my own work: the SWE 363 team project (UniRide), my
-  senior design project, and a facility-planning model from ISE 422.
+- **Real content only.** Both projects are my own work: my senior design project and Ala Makth, a
+  non-profit product I am building at my company, Optimal X.
 - **Original images.** The placeholders are simple SVG drawings made for this site, not copied from
   other websites.
 
 **What I would change next:** Right now the project cards are written directly in `index.html`.
 Next time I would move them into a small JSON file and build the cards with JavaScript, so I can add
 a new project without touching the HTML. I would also replace the placeholder images with real
-screenshots, starting with UniRide once our team builds it.
+screenshots, starting with the inventory system once our team finishes it.
 
 - **Academic integrity.** AI tools are allowed in this assignment, and I have disclosed how I used
   them here and in the README. I understand the code and can explain any part of it.
