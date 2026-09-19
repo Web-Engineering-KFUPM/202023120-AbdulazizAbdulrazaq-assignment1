@@ -13,12 +13,12 @@ It is the starting frame of my professional portfolio for **SWE 363 – Web Engi
 |------|--------------|
 | **About Me** | Short introduction, a one-line tagline and an avatar image |
 | **Skills** | Four skill cards (extra section) |
-| **Projects** | Three project cards, each with a title, description, tags and a placeholder image |
+| **Projects** | Two project cards (my senior design project and Ala Makth), each with a title, description, tags and a placeholder image |
 | **Contact** | Form with Name, Email and Message, validated in the browser (no backend) |
 | **Greeting** | Says good morning / afternoon / evening based on the visitor's local time |
 | **Theme toggle** | Dark / light mode, remembered for the next visit |
 | **Navigation** | Sticky header, smooth scrolling, the current section is highlighted, hamburger menu on phones |
-| **Responsive** | Desktop (3 columns), tablet (2 columns) and mobile (1 column) layouts |
+| **Responsive** | Multi-column layout on desktop and tablet, one column on mobile |
 
 ## Tech stack
 
