@@ -13,7 +13,7 @@ build tool and no external library, so the page loads fast and runs directly fro
 | `<header class="site-header">` | Sticky navigation bar: logo, section links, hamburger button, theme toggle |
 | `<section id="about">` | Hero area: greeting, name, tagline, introduction, two call-to-action buttons, avatar |
 | `<section id="skills">` | Four skill cards in a list (`<ul>`) |
-| `<section id="projects">` | Three `<article>` project cards with image, title, description and tags |
+| `<section id="projects">` | Two `<article>` project cards with image, title, description and tags |
 | `<section id="contact">` | Contact form with Name, Email and Message fields |
 | `<footer>` | Copyright with the current year, GitHub link, back-to-top link |
 
@@ -45,7 +45,7 @@ Dark mode is applied in two ways:
 
 | Width | Layout |
 |-------|--------|
-| > 900 px (desktop) | Skills in 4 columns, projects in 3 columns, hero side by side |
+| > 900 px (desktop) | Skills in 4 columns, projects side by side, hero side by side |
 | 681–900 px (tablet) | Skills and projects in 2 columns |
 | ≤ 680 px (mobile) | One column, avatar above the text, links move into a hamburger dropdown |
 
@@ -83,7 +83,7 @@ valid form shows a confirmation message and is reset.
 
 ## 5. Performance
 
-- No frameworks, fonts or libraries are downloaded; the only files are one HTML, one CSS, one JS and four small SVG images.
+- No frameworks, fonts or libraries are downloaded; the only files are one HTML, one CSS, one JS and three small SVG images.
 - Images are SVG (vector), so they stay sharp at every size and weigh only a few kilobytes.
 - Project images use `loading="lazy"`, and the script uses `defer` so it never blocks rendering.
 
