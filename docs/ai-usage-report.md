@@ -2,68 +2,67 @@
 
 ## 1. Tools used and use cases
 
-| Tool | How I used it |
-|------|---------------|
-| **Claude (Anthropic), in the Claude desktop app** | Main assistant for the whole assignment: turning the rubric into a checklist, generating the first version of the HTML, CSS and JavaScript, drawing the SVG placeholder images, drafting the README and the technical documentation, and running automated browser tests |
-| **Playwright (driven through Claude)** | Automated testing: loading the page at desktop, tablet and phone widths, taking screenshots, and checking the theme toggle, the mobile menu and the form validation |
+| Tool | What I used it for |
+|------|--------------------|
+| **Claude (Anthropic)** | My main AI assistant. I used it to break the assignment rubric into a checklist, to get a first draft of the HTML, CSS and JavaScript, to draw simple SVG placeholder images, and to help me write the documentation. |
+| **Playwright (run through Claude)** | Testing the site automatically at desktop, tablet and phone sizes and checking the console for errors. |
 
-Specific use cases:
+How I used them, step by step:
 
-1. **Requirements to checklist.** I gave Claude the assignment guidelines and rubric and used the
-   result as a checklist: three required sections, at least two projects, a form with three fields,
-   responsive layout, at least one JavaScript feature, and the two documentation files.
-2. **Code generation.** Claude produced the page structure, the stylesheet (theme variables,
-   Grid/Flexbox layout, three breakpoints) and the script (greeting, theme toggle, mobile menu,
-   active links, form validation).
-3. **Testing and debugging.** Claude ran the site in a headless browser at 1366, 820 and 390 px,
-   looked at the screenshots and checked the console for errors.
-4. **Documentation support.** Claude drafted the README, this report and the technical documentation.
+1. **Planning.** I pasted the assignment guidelines into Claude and asked it to turn them into a
+   checklist. I used that list to make sure nothing was missing: About, Projects, Contact, responsive
+   layout, at least one JavaScript feature, README and the two docs.
+2. **First draft of the code.** I described the sections and features I wanted, and Claude produced
+   the first version of the page, the styles and the script.
+3. **Testing.** I had the site tested at 1366, 820 and 390 px wide, looked at the screenshots, and
+   checked that the theme toggle, the mobile menu and the form all worked.
+4. **Documentation.** Claude helped me structure the README and the technical documentation, and I
+   edited the content to match what the site actually does.
 
 ## 2. Benefits and challenges
 
-**Benefits**
+**What helped**
 
-- Much faster start: a working, well-structured first version appeared in minutes, so the time went
-  into checking and improving it instead of typing boilerplate.
-- Automated screenshots at three screen sizes caught problems I might not have noticed by resizing
-  one window by hand.
-- The generated code came with comments, which made it easier to read and understand each part.
+- I got a working, well-organized starting point quickly, so I spent my time checking and improving
+  the site instead of writing boilerplate.
+- Testing at three screen sizes showed layout problems I would probably have missed by only
+  resizing one browser window.
+- The code comments made it easier for me to follow what each part does.
 
-**Challenges and limitations**
+**What was difficult**
 
-- The AI cannot know my personal details or real projects on its own. The About text and the project
-  descriptions had to be based on my actual courses and senior project, not generic filler.
-- One screenshot looked wrong (the dark theme appeared grey). The cause was not a bug: the screenshot
-  was taken in the middle of the 0.25 s colour transition. This showed me that a test result also
-  needs to be read critically.
-- AI output can look finished while still hiding small issues, so every feature had to be tested,
-  not assumed.
+- The AI does not know me. The About text and the projects had to come from my real courses and my
+  senior project; I had to give it that information myself.
+- One screenshot showed the dark theme as grey. It turned out it was taken halfway through the colour
+  transition, not a real bug. I learned not to trust a test result without understanding it.
+- Code from AI can look finished and still have small problems, so I had to test every feature.
 
-## 3. Learning outcomes
+## 3. What I learned
 
-- **CSS custom properties for theming:** dark mode only needs to redefine a few variables instead of
-  duplicating styles for every component.
-- **Avoiding the theme "flash":** a small inline script in `<head>` applies the saved theme before
-  the page is drawn; putting it at the end of the body causes a white flash.
-- **Defensive `localStorage` use:** storage can throw in private browsing, so reads and writes are
-  wrapped in `try / catch`.
-- **Accessible forms:** labels, `aria-live` error messages, `aria-invalid`, and moving focus to the
-  first invalid field.
-- **`IntersectionObserver`** for highlighting the current section without listening to every scroll event.
-- **Workflow:** generate, then test at several screen sizes, then fix. Treat AI as a fast first-draft
-  writer and reviewer, not as the final authority.
+- **CSS variables for themes:** dark mode only changes a few variables instead of repeating styles.
+- **Why the theme script is in `<head>`:** it sets the saved theme before the page is drawn, so there
+  is no white flash for users who chose dark mode.
+- **Safe use of `localStorage`:** it can fail in private browsing, so it is wrapped in `try / catch`.
+- **Accessible forms:** labels, error messages read by screen readers (`aria-live`), and moving focus
+  to the first field with an error.
+- **`IntersectionObserver`:** a simple way to highlight the menu link of the section on screen.
 
-## 4. Responsible use and modifications
+_(My own words: add one thing you learned while building or reviewing the site.)_
 
-- **Reviewed, not copied blindly.** Every file was read and each feature was tested in the browser
-  before it was committed.
-- **Fixes that came from testing:**
-  - In dark mode the primary button had white text on a light mint colour, which was hard to read. A
-    new `--on-accent` colour variable was added so the button text is dark in dark mode.
-  - `localStorage` access is wrapped in `try / catch` so the page still works in private-browsing
-    mode, where storage can be blocked.
-- **Content kept honest.** The projects describe work from my own studies (the SWE 363 team project,
-  my senior design project and a facility-planning model from ISE 422); nothing is invented.
-- **Placeholder images** are original simple SVG drawings, not copied from other websites.
-- **Academic integrity.** AI use is allowed for this assignment and is fully disclosed here and in the
-  README. I understand the code and can explain every part of it.
+## 4. Responsible use and my changes
+
+- **I reviewed everything before committing it.** I read each file and tested each feature in the
+  browser.
+- **Changes made after testing:**
+  - In dark mode the main button had white text on a light green background, which was hard to read.
+    I added an `--on-accent` colour so the button text becomes dark in dark mode.
+  - `localStorage` is wrapped in `try / catch` so the page still works in private browsing.
+- **Real content only.** The three projects are my own work: the SWE 363 team project (UniRide), my
+  senior design project, and a facility-planning model from ISE 422.
+- **Original images.** The placeholders are simple SVG drawings made for this site, not copied from
+  other websites.
+
+_(My own words: explain one part of the code you changed or would change, and why.)_
+
+- **Academic integrity.** AI tools are allowed in this assignment, and I have disclosed how I used
+  them here and in the README. I understand the code and can explain any part of it.
