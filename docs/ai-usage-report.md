@@ -9,11 +9,11 @@
 
 How I used them, step by step:
 
-1. **Planning.** I pasted the assignment guidelines into Claude and asked it to turn them into a
+1. **Planning.** I gave Claude the assignment guidelines and asked it to turn them into a
    checklist. I used that list to make sure nothing was missing: About, Projects, Contact, responsive
    layout, at least one JavaScript feature, README and the two docs.
-2. **First draft of the code.** I described the sections and features I wanted, and Claude produced
-   the first version of the page, the styles and the script.
+2. **First draft of the code.** I told Claude which sections and features the site needed, and it
+   produced the first version of the page, the styles and the script.
 3. **Testing.** I had the site tested at 1366, 820 and 390 px wide, looked at the screenshots, and
    checked that the theme toggle, the mobile menu and the form all worked.
 4. **Documentation.** Claude helped me structure the README and the technical documentation, and I
@@ -54,11 +54,11 @@ for transparency, so I document exactly how I used it.
 
 ## 4. Responsible use and my changes
 
-- **I reviewed everything before committing it.** I read each file and tested each feature in the
-  browser.
+- **I reviewed the work before submitting it.** I went through the files and tested each feature in
+  the browser.
 - **Changes made after testing:**
   - In dark mode the main button had white text on a light green background, which was hard to read.
-    I added an `--on-accent` colour so the button text becomes dark in dark mode.
+    An `--on-accent` colour was added so the button text becomes dark in dark mode.
   - `localStorage` is wrapped in `try / catch` so the page still works in private browsing.
 - **Real content only.** The three projects are my own work: the SWE 363 team project (UniRide), my
   senior design project, and a facility-planning model from ISE 422.
