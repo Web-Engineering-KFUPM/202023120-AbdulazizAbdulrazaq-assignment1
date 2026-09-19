@@ -340,7 +340,7 @@ h3 {
 /* ---------- 8. Projects ---------- */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -469,10 +469,6 @@ h3 {
 /* Tablet */
 @media (max-width: 900px) {
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
