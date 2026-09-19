@@ -3,7 +3,7 @@
 A simple, responsive personal portfolio web application built with plain **HTML, CSS and JavaScript**.
 It is the starting frame of my professional portfolio for **SWE 363 – Web Engineering & Development (KFUPM, Term 261)**.
 
-**Live site:** https://abdulaziz202023120.github.io/202023120-AbdulazizAbdulrazaq-assignment1/
+**Live site:** https://web-engineering-kfupm.github.io/202023120-AbdulazizAbdulrazaq-assignment1/
 
 ---
 
@@ -50,7 +50,7 @@ No build step and no dependencies are needed.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/abdulaziz202023120/202023120-AbdulazizAbdulrazaq-assignment1.git
+   git clone https://github.com/Web-Engineering-KFUPM/202023120-AbdulazizAbdulrazaq-assignment1.git
    cd 202023120-AbdulazizAbdulrazaq-assignment1
    ```
 2. Open `index.html` in any modern browser (double-click it), **or** serve the folder so the page
