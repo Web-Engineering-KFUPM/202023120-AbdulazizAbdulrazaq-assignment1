@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" role="img" aria-label="Placeholder: open book and progress bars">
+  <rect width="400" height="225" fill="#eef5f0"/>
+  <g transform="translate(40 55)">
+    <path d="M0 10 Q 60 -8 120 12 L120 120 Q 60 102 0 118 Z" fill="#ffffff" stroke="#0f6b5c" stroke-width="4"/>
+    <path d="M240 10 Q 180 -8 120 12 L120 120 Q 180 102 240 118 Z" fill="#ffffff" stroke="#0f6b5c" stroke-width="4"/>
+    <g stroke="#9fc7bb" stroke-width="3">
+      <line x1="18" y1="40" x2="102" y2="44"/><line x1="18" y1="60" x2="102" y2="64"/><line x1="18" y1="80" x2="102" y2="84"/>
+      <line x1="138" y1="44" x2="222" y2="40"/><line x1="138" y1="64" x2="222" y2="60"/><line x1="138" y1="84" x2="222" y2="80"/>
+    </g>
+  </g>
+  <g transform="translate(300 60)">
+    <rect x="0" y="0" width="70" height="12" rx="6" fill="#d7e6e0"/><rect x="0" y="0" width="58" height="12" rx="6" fill="#0f6b5c"/>
+    <rect x="0" y="30" width="70" height="12" rx="6" fill="#d7e6e0"/><rect x="0" y="30" width="40" height="12" rx="6" fill="#0f6b5c"/>
+    <rect x="0" y="60" width="70" height="12" rx="6" fill="#d7e6e0"/><rect x="0" y="60" width="24" height="12" rx="6" fill="#e8743b"/>
+    <rect x="0" y="90" width="70" height="12" rx="6" fill="#d7e6e0"/><rect x="0" y="90" width="50" height="12" rx="6" fill="#0f6b5c"/>
+  </g>
+</svg>
