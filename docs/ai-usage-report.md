@@ -47,7 +47,10 @@ How I used them, step by step:
   to the first field with an error.
 - **`IntersectionObserver`:** a simple way to highlight the menu link of the section on screen.
 
-_(My own words: add one thing you learned while building or reviewing the site.)_
+**In my own words:** The biggest lesson for me is that working with AI is like managing any process.
+It gives you a fast first draft, but you still need a clear checklist and real testing before you
+accept the output. I also learned that using AI is not the problem; hiding it is. The course asks
+for transparency, so I document exactly how I used it.
 
 ## 4. Responsible use and my changes
 
@@ -62,7 +65,10 @@ _(My own words: add one thing you learned while building or reviewing the site.)
 - **Original images.** The placeholders are simple SVG drawings made for this site, not copied from
   other websites.
 
-_(My own words: explain one part of the code you changed or would change, and why.)_
+**What I would change next:** Right now the project cards are written directly in `index.html`.
+Next time I would move them into a small JSON file and build the cards with JavaScript, so I can add
+a new project without touching the HTML. I would also replace the placeholder images with real
+screenshots, starting with UniRide once our team builds it.
 
 - **Academic integrity.** AI tools are allowed in this assignment, and I have disclosed how I used
   them here and in the README. I understand the code and can explain any part of it.
