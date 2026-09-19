@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" role="img" aria-label="Placeholder: car on a route">
+  <rect width="400" height="225" fill="#e3f2ef"/>
+  <path d="M30 180 C 110 60, 200 200, 280 90 S 370 60, 380 50" fill="none" stroke="#0f6b5c" stroke-width="5" stroke-dasharray="12 10"/>
+  <circle cx="30" cy="180" r="10" fill="#0f6b5c"/>
+  <circle cx="380" cy="50" r="10" fill="#e8743b"/>
+  <g transform="translate(150 118)">
+    <rect x="0" y="18" width="100" height="30" rx="10" fill="#1c2230"/>
+    <path d="M18 18 L34 0 H70 L86 18 Z" fill="#1c2230"/>
+    <circle cx="24" cy="50" r="10" fill="#5b6475"/>
+    <circle cx="76" cy="50" r="10" fill="#5b6475"/>
+  </g>
+</svg>
