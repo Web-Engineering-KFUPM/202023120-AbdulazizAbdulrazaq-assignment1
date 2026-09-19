@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" role="img" aria-label="Placeholder: shelves and a stock chart">
+  <rect width="400" height="225" fill="#eef1f8"/>
+  <g fill="#c9d3e6">
+    <rect x="30" y="40" width="150" height="8"/><rect x="30" y="100" width="150" height="8"/><rect x="30" y="160" width="150" height="8"/>
+  </g>
+  <g fill="#0f6b5c">
+    <rect x="40" y="12" width="28" height="28"/><rect x="74" y="20" width="22" height="20"/><rect x="120" y="14" width="30" height="26"/>
+    <rect x="44" y="72" width="30" height="28"/><rect x="100" y="80" width="26" height="20"/>
+    <rect x="40" y="136" width="24" height="24"/><rect x="70" y="130" width="34" height="30"/><rect x="140" y="138" width="26" height="22"/>
+  </g>
+  <polyline points="220,180 255,120 290,150 325,80 370,105" fill="none" stroke="#e8743b" stroke-width="5" stroke-linejoin="round"/>
+  <line x1="215" y1="190" x2="380" y2="190" stroke="#5b6475" stroke-width="3"/>
+  <line x1="215" y1="190" x2="215" y2="50" stroke="#5b6475" stroke-width="3"/>
+</svg>
